@@ -1,0 +1,32 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/@babel/node/bin/babel-node.js app.js",
+    "setup": "node data/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "elasticsearch": "^13.3.1",
+    "file-api": "^0.10.4",
+    "ink": "^2.0.6",
+    "ink-divider": "^1.1.1",
+    "ink-text-input": "^3.1.0",
+    "react": "^16.8.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}
